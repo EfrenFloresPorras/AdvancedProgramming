@@ -1,0 +1,40 @@
+<!--
+    This page is used to encrypt and decrypt files that the user selects.
+    The user can select a file to encrypt or decrypt, and then select the key to use. 
+    We wil be using c++ to encrypt and decrypt the files.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Encryption and Decryption</title>
+    <link rel="stylesheet" href="css/encryptionDecryptionPage.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Encryption and Decryption</h1>
+        </div>
+        <div class="content">
+            <div class="encrypt">
+                <h2>Encrypt</h2>
+                <form action="encryptionDecryptionPage.php" method="post" enctype="multipart/form-data">
+                    <input type="file" name="fileToEncrypt" id="fileToEncrypt">
+                    <input type="submit" value="Encrypt" name="submit">
+                </form>
+            </div>
+            <div class="decrypt">
+                <h2>Decrypt</h2>
+                <form action="encryptionDecryptionPage.php" method="post" enctype="multipart/form-data">
+                    <input type="file" name="fileToDecrypt" id="fileToDecrypt">
+                    <input type="submit" value="Decrypt" name="submit">
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <h3>Footer</h3>
+        </div>
+    </div>
+</body>
+</html>
